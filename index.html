@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLock - Secure Cloud Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Our Services</h1>
+    <p>Explore how SkyLock keeps your files safe in the cloud</p>
+    <div class="service">
+        <h3>Encrypt Files</h3>
+        <form action="/encrypt" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Encrypt File</button>
+        </form>
+    </div>
+
+    <div class="service">
+        <h3>Decrypt Files</h3>
+        <form action="/decrypt" method="post" enctype="multipart/form-data">
+            <input type="text" name="encryption_key" placeholder="Enter Encryption Key" required>
+            <input type="file" name="file" required>
+            <button type="submit">Decrypt File</button>
+        </form>
+    </div>
+
+    <div class="service">
+        <h3>Upload to Cloud</h3>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="aws_access_key" placeholder="AWS Access Key" required>
+            <input type="text" name="aws_secret_key" placeholder="AWS Secret Access Key" required>
+            <input type="text" name="bucket_name" placeholder="Bucket Name" required>
+            <input type="file" name="file" required>
+            <button type="submit">Upload to Cloud</button>
+        </form>
+    </div>
+
+    <div class="service">
+        <h3>Download from Cloud</h3>
+        <form action="/download" method="post">
+            <input type="text" name="aws_access_key" placeholder="AWS Access Key" required>
+            <input type="text" name="aws_secret_key" placeholder="AWS Secret Access Key" required>
+            <input type="text" name="bucket_name" placeholder="Bucket Name" required>
+            <input type="text" name="filename" placeholder="Enter filename" required>
+            <button type="submit">Download from Cloud</button>
+        </form>
+    </div>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Have questions or need help? Get in touch with us!</p>
+    </footer>
+</body>
+</html>
