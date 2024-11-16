@@ -1,35 +1,103 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
-}
-
-h1, h3 {
+    background-color: #f9f9f9;
     color: #333;
+    text-align: center;
 }
 
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0 10px;
+    color: #222;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0 30px;
+    color: #666;
+}
+
+/* Service Section Styling */
 .service {
     display: inline-block;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.service h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.service input,
+.service button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
+}
+
+/* Button Styling */
+.service button {
+    background-color: #007bff;
+    color: white;
+    border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+.service button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
+/* Contact Us Section */
 footer {
-    margin-top: 20px;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* File Actions Placeholder Styling */
+.service {
+    display: inline-block;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
